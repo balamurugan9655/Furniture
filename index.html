@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APJ Furniture</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media@responce.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><span>APJ</span> Furniture</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">
+                <select name="Product" id="product">
+                    <option value="Product">Product</option>
+                </select>
+            </a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <img src="./assets/icons/wrap-icon (1).png" alt="Search-icon" class="nav-icon">
+            <img src="./assets/icons/wrap-icon.png" alt="user-icon" class="nav-icon">
+            <span class="menu-btn" onclick="openSidebar()">&#9776;</span>
+        </div>
+    </nav>
+
+    <!-- Sidebar Menu -->
+    <div class="sidebar" id="sidebar">
+        <div class="close-btn" onclick="closeSidebar()">×</div>
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <div style="display:flex;flex-direction: row;" class="sidenav-div">
+            <a href="#" class="sidenav-div"><img src="./assets/icons/wrap-icon (1).png" alt="Search-icon" class="sidenav-icon">Scarch</a>
+            <a href="#" class="sidenav-div"><img src="./assets/icons/wrap-icon.png" alt="user-icon" class="sidenav-icon">User</a></div>
+    </div>
+
+    <main>
+        <section class="page1">
+            <div class="container">
+                <div class="text-box">
+                    <h1>Help You To Make <span>Modern Furniture</span></h1>
+                    <p>We help you to create and organize your room to be more cozy, designed by professional interior designers.</p>
+                    <a href="#" class="btn">See Our Product</a>
+                </div>
+                <div class="image-box">
+                    <!-- <img src="./assets/icons/Rectangle 87.png" alt="Furniture"> -->
+                    <img src="./assets/image/Rectangle 88.png" alt="Furniture">
+                    <!-- <button><img src="./assets/icons/Stroke 1.png" alt="icon"></button>
+                    <button><img src="./assets/icons/Stroke 2.png" alt="icon"></button> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="page2">
+            <div class="container-page2">
+                <h2>Some of our trusted company</h2>
+                <div class="logo-box">
+                    <img src="./assets/icons/google-logo-black-transparent 1.png" alt="Google">
+                    <img src="./assets/icons/google-logo-black-transparent 3.png" alt="Tokopedia">
+                    <img src="./assets/icons/google-logo-black-transparent 4.png" alt="Tiket">
+                    <img src="./assets/icons/google-logo-black-transparent 4.png" alt="Microsoft">
+                </div>
+            </div>
+        </section>
+
+        <section class="page3">
+            <div class="container-page3">
+                <h2>Some of the interiors that we provide for you</h2>
+        
+                <div class="interiors">
+                    <!-- Carousel -->
+                    <div class="carousel">
+                        <img id="carousel-image" src="./assets/image/Group 30.png" alt="Living Room">
+                        <div class="carousel-controls">
+                            <button onclick="prevSlide()">&#10094;</button>
+                            <button onclick="nextSlide()">&#10095;</button>
+                        </div>
+                    </div>
+        
+                    <!-- Interior Info -->
+                    <div class="interior-info">
+                        <div class="info-box">
+                            <img src="./assets/image/Rectangle 92.png" alt="Living Room">
+                            <div class="info-content">
+                                <h3>Living Room</h3>
+                                <p>A living room sets the tone for the rest of the house.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <img src="./assets/image/Rectangle 92 (1).png" alt="Bedroom">
+                            <div class="info-content">
+                                <h3>Bedroom</h3>
+                                <p>Make your bedroom comfortable and relaxing.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <img src="./assets/image/Rectangle 92 (2).png" alt="Office">
+                            <div class="info-content">
+                                <h3>Office</h3>
+                                <p>Improve productivity with a well-designed workspace.</p>
+                                <a href="#" class="read-more">Read More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-box">
+            <div>
+                <h2>SUBSCRIBE TO GET THE LAST NEWS ABOUT US</h2>
+                <p>We recommend you subscribe to our newspaper, enter your email to get our daily update about us.</p>
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your email address">
+                <button type="button" class="btn">Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-link">
+            <div class="copy">
+                <h6>PT. ANDARA PANCA JAYA</h6>
+                <p>© 2022. All rights reserved</p>
+            </div>
+            <div class="link-group">
+                <a href="#">About Us</a>
+                <a href="#">Partnership</a>
+                <a href="#">Privacy Police</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

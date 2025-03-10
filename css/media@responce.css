@@ -1,0 +1,120 @@
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .text-box, .image-box {
+        width: 50%;
+    }
+    .text-box {
+        margin-bottom: 20px;
+    }
+    .container-page2>h2 {
+        padding: 20px;
+    }
+    .logo-box {
+        /* flex-direction: column; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        /* border: 2px solid black; */
+        gap: 15px;
+    }
+    .logo-box img {
+        max-width: 120px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container-page3>h2 {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .interiors {
+        flex-direction: column;
+    }
+    .carousel, .interior-info {
+        width: 80%;
+    }
+    .interior-info {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* .info-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px 8px 0 0;
+    } */
+    .footer-box>div {
+        padding: 10px;
+        width: 100%;
+    }
+    .page3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container-page2 {
+        padding: 5px;
+    }
+    .interior-info {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .text-box, .image-box {
+        width: 80%;
+    }
+    .footer-box {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-box>div:nth-child(2) {
+        /* flex-direction: column; */
+        padding: 0px;
+        gap: 5px;
+        padding-bottom: 5px;
+       
+    }
+    .footer-link {
+        flex-direction: column-reverse;
+        padding: 0px;
+        padding-top: 5px;
+    }
+    
+    /* .footer-box>div:nth-child(2)> input {
+        padding: 0px;
+    } */
+}
+
+@media screen and (max-width:374px) {
+    
+    .nav-icon {
+        display: none;
+    }
+    .sidenav-icon {
+        display: block;
+    }
+    .sidenav-div {
+        display: none;
+        visibility: visible;
+    }
+    .footer-box>div:nth-child(2) {
+        flex-direction: column;
+    }
+    .link-group>a {
+        padding: 0px 2px;
+    }
+    .info-box>img {
+        padding: 0px 10px;
+    }
+}
